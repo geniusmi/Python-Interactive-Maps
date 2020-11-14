@@ -21,8 +21,9 @@ query = {"term":"restaurants","latitude":33.74,"longitude":-84.35, "radius":4000
 #search in cobb county
 query2 = {"term":"restaurants","latitude":33.96,"longitude":-84.58, "radius":40000,"limit":50,"sort_by":"rating","price":"1,2"}
 
-# The headers dictionary posts the API Key which uses bearer authentication, as in
-headers = {'Authorization': "Bearer cxBfJy-9_Fi5G9zbjdmAjstTEIR4KLBvshq76mwqZLQ9Fc_vcp3tyij7z3-fE6hPkj1rGhNnQ_2LayyCoFR4EHk0do-_OmEKxXvZv_BabwWXMBEx-qLWTOen5j-vX3Yx"}
+# The headers dictionary posts the API Key which uses bearer authentication
+# change 'yourAPI' 
+headers = {'Authorization': "Bearer YourAPI"}
 
 
 response = requests.request("GET", url, data=None, headers=headers, params=query)
